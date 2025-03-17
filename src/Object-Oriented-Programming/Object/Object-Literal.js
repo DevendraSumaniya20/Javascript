@@ -16,20 +16,27 @@ Think of it like a real-world object! 🚗
 */
 
 // ✅ **Example: Object Literal**
-let car = {
+const car = {
   // Properties
   make: "Toyota",
   model: "Corolla",
   year: 2021,
   color: "red",
 
-  // Method
+  // Method to simulate driving
   drive() {
     return "Let's go on a new ride 🚗";
   },
+
+  // Method to change the car's color
   changeColor(newColor) {
     this.color = newColor;
     return `The new color is ${this.color}`;
+  },
+
+  // Method to display car details
+  getDetails() {
+    return `Car Details: ${this.make} ${this.model}, Year: ${this.year}, Color: ${this.color}`;
   },
 };
 
@@ -37,6 +44,7 @@ let car = {
 console.log(car.make); // Output: Toyota
 console.log(car.drive()); // Output: Let's go on a new ride 🚗
 console.log(car.changeColor("blue")); // Output: The new color is blue
+console.log(car.getDetails()); // Output: Car Details: Toyota Corolla, Year: 2021, Color: blue
 
 /*
 📝 **Key Notes**:
@@ -44,3 +52,10 @@ console.log(car.changeColor("blue")); // Output: The new color is blue
 2️⃣ Object literals are great for creating simple objects quickly.
 3️⃣ Methods make objects dynamic and interactive.
 */
+
+// 🚀 **How to Create Objects**:
+// 1️⃣ Define properties and methods inside curly braces `{}`.
+// 2️⃣ Separate each property or method with a comma `,`.
+// 3️⃣ Use a colon `:` to assign values to properties.
+// 4️⃣ Use a pair of parentheses `()` to define methods.
+// 5️⃣ Access properties and methods using dot notation (e.g., `car.make`).
