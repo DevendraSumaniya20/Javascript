@@ -25,7 +25,7 @@ if (a > 0) {
 // 2️⃣ **if-else condition**
 /**
  * 📌 @real_time_scenario
- * - Checking if a user is a minor or an adult.
+ * - Checking if a user is a under Age or an adult.
  *
  * 🏷️ @key_concepts
  * - Two-way branching.
@@ -36,7 +36,7 @@ let age = 18;
 if (age >= 18) {
   console.log("🧑 Adult");
 } else {
-  console.log("🧒 Minor");
+  console.log("🧒 Under Age");
 }
 // Output: 🧑 Adult
 
